@@ -11,11 +11,11 @@ fetch('places.json')
 function appendData(data) {
     let mainContainer = document.getElementById("places");
     document.createElement("ol")
-    for (var i = 0; i < 10; i++) {
-        let start = data[1]["starts"][getRandomInt(data[1]["starts"].length)];
-        let end = data[0]["ends"][getRandomInt(data[0]["ends"].length)];
+    for (let i = 0; i < 10; i++) {
+        let first = Object.keys(data["prefix"][getRandomInt(data["prefix"].length)]);
+        let last = Object.keys(data["suffix"][getRandomInt(data["suffix"].length)]);
         let li = document.createElement("li");
-        li.innerHTML = (start + end);
+        li.innerHTML = (first + last);
         mainContainer.appendChild(li);
     }
 }
