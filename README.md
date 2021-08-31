@@ -1,2 +1,3 @@
 # rpg-stadsnamn
-Generator för RPG Stadsnamn på svenska
+Generator for Swedish sounding citynames when playing TTRPG.
+Probably works great for dwarf villages and what not as well.
